@@ -1,0 +1,29 @@
+package work;
+
+public class MainClass {
+	public static void main(String[] args) {
+		/*
+		 * 편의점
+		 * 지불금액: 3210원
+		 * 본인금액: 10000원
+		 * 
+		 * 거스름돈?
+		 * 
+		 * 5000원
+		 * 1000원
+		 * 500원
+		 * 100원
+		 * 50원
+		 * 10원
+		 * */
+		
+		int money = 10000;
+		int pay = 3210;
+		
+		//거스름돈
+		int result = money - pay;
+		
+		int m5000 = result/5000;
+		System.out.println(m5000);
+	}
+}

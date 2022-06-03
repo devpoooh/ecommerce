@@ -1,0 +1,34 @@
+package sample02;
+
+import java.util.Scanner;
+
+public class MainClass {
+	public static void main(String[] args) {
+		// input(console)
+		Scanner sc = new Scanner(System.in);
+
+		// boolean
+		boolean b;
+		System.out.print("b = ");
+		b = sc.nextBoolean();
+		System.out.println("input b = " + b);
+
+		// Integer
+		int num;
+		System.out.print("num = ");
+		num = sc.nextInt();
+		System.out.println("input num = " + num);
+
+		// double
+		double d;
+		System.out.print(" d = ");
+		d = sc.nextDouble();
+		System.out.println("input d ="+d);
+
+		// String
+		String str;
+		System.out.print("str = ");
+		str=sc.next();
+		System.out.println("input str = "+str);
+	}
+}

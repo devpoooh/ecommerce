@@ -1,0 +1,20 @@
+package sample03;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		/*
+		 * 연산 + - * / %
+		 * 
+		 * 9/2=4 9%2=1
+		 */
+		
+		int num1, num2;
+		num1 = 3;
+		num2 = 2;
+		
+		int result = num1 / num2;
+		System.out.println("result = " + result);
+	}
+
+}

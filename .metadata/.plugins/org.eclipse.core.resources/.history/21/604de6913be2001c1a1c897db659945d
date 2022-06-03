@@ -1,0 +1,17 @@
+package sample01;
+
+public class MainClass {
+	public static void main(String[] args) {
+		/*
+		 * 숫자(상수): 2진수: 0, 1
+		 * 			 8진수: 0 ~ 7 9 -> 011
+		 * 			 10진수: 0 ~ 9
+		 * 			 16진수: 0~ 9 A ~ F(15)
+		 * 
+		 * 변수: 빈통(크기)에 데이터 종류가 나누어진다.
+		 * */
+		
+		int num;
+		String str;	//instance, object == 클래스 변수
+	}
+}

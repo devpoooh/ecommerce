@@ -1,0 +1,38 @@
+package sample04;
+
+public class MainClass {
+	public static void main(String[] args) {
+		/*
+		 * wrapper class: 일반 자료형을 클래스화한 것
+		 * 
+		 * 일반 자료형 		wrapper class
+		 * boolean			Boolean
+		 * byte				Byte
+		 * short			Short
+		 * int 				Integer
+		 * long				Long
+		 * float			Float
+		 * double			Double
+		 * char				Character
+		 * char[]			String
+		 * */
+		
+		int i=123;
+		Integer in = 234;
+		Integer cin = new Integer(345);
+		System.out.println(cin);
+		
+		double d = 123.456;
+		Double do1 = 123.456;
+		System.out.println(do1);
+		
+		//Integer, Double
+		//String
+		
+		//문자열 -> 숫자
+		String str ="1234";
+		int num = Integer.parseInt(str);
+		System.out.println(num);
+		//숫자 -> 문자열
+	}
+}

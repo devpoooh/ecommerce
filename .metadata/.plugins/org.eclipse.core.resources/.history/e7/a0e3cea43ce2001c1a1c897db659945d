@@ -1,0 +1,22 @@
+package sample02;
+
+import java.util.Scanner;
+
+public class MainClass {
+	public static void main(String[] args) {
+		//input(console)
+		Scanner sc = new Scanner(System.in);
+		
+		//boolean
+		boolean b;
+		System.out.print("b = ");
+		b=sc.nextBoolean();
+		System.out.println("input b = "+ b);
+		
+		//Integer
+		
+		//double
+		
+		//String
+	}
+}
