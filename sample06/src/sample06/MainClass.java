@@ -64,7 +64,37 @@ public class MainClass {
 		String _str = "hello";
 		if(_str.equals("world")) { //문자열이 다를때
 			System.out.println("_str은 hello가 아닙니다");
-			
 		}
+		
+		if(_str.contains("he")) {	//해당문자를 포함하고 있는지
+			System.out.println("_str은 he를 포함하고 있습니다");
+		}
+		
+		//switch문
+		int n=2;
+		switch(n) {
+			case 1:
+				//처리
+				System.out.println("n은 1입니다.");
+				break;
+			case 2:
+				//처리
+				System.out.println("n은 2입니다.");
+				break;
+			default:
+				System.out.println("n은 1도 2도 아닙니다.");
+				break;
+		}
+		
+		String str1 = "hello";
+		
+		//문자 접근도 가능
+		switch(str1) {
+			case "hello":
+				System.out.println("str1은 hello입니다");
+				break;
+		}
+		
+		//실수형 접근 불가
 	}
 }
