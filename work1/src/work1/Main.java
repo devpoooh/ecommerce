@@ -121,36 +121,28 @@ public class Main {
 		 * */
 		
 		String str1 = "123";
-		boolean b = true; //false면 문자 포함
-		for(int i=0;i<str1.length();i++) {
-			char c = str1.charAt(i);
-			
-			switch(c) {
-			case '0':
-			case '1':
-			case '2':
-			case '3':
-			case '4':
-			case '5':
-			case '6':
-			case '7':
-			case '8':
-			case '9':
-				break;
-			default:
-				b= false;
-				break;
-			}
-
-			if(b==false) {
-				break;
-			}
-		}
+		boolean numTrue = true;
+		/*
+		 * boolean b = true; //false면 문자 포함 for(int i=0;i<str1.length();i++) { char c =
+		 * str1.charAt(i);
+		 * 
+		 * switch(c) { case '0': case '1': case '2': case '3': case '4': case '5': case
+		 * '6': case '7': case '8': case '9': break; default: b= false; break; }
+		 * 
+		 * if(b==false) { break; } }
+		 * 
+		 * if(b==true) { System.out.println("모두 숫자로 이루어져 있습니다."); }else {
+		 * System.out.println("문자가 포함되어 있습니다."); }
+		 */
 		
-		if(b==true) {
-			System.out.println("모두 숫자로 이루어져 있습니다.");
-		}else {
-			System.out.println("문자가 포함되어 있습니다.");
+		for (int i = 0; i < str1.length(); i++) {
+			char c = str1.charAt(i);
+			int asc = (int)c;
+			if(asc<48 || asc>52) {
+				System.out.println("숫자");
+			}else {
+				
+			}
 		}
 	}
 	
