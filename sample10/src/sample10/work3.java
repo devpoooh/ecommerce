@@ -37,17 +37,17 @@ public class work3 {
 		for (int i = 0; i < result.length(); i++) {
 			int dec = (int) result.charAt(i);
 			char c = result.charAt(i);
-//					int idx = Arrays.asList(result).indexOf(c);
+//			int idx = Arrays.asList(result).indexOf(c);
 			int idx = 0;
 
-			// 영어 -> 숫자 복호화
+			// 알파벳 -> 숫자 복호화
 			if (dec >= 97 && dec <= 122) {
 				for(int j=0;j<numCode.length;j++) {
 					if(numCode[j]==c) {
 						baseCode+=j+"";
 					}
 				}
-			} else { // 아니면 특수부호 -> 영어복호화
+			} else { // 특수부호 -> 영어복호화
 				for(int j=0;j<abcCode.length;j++) {
 					if(abcCode[j]==c) {
 						baseCode+=(char)(j+97);
