@@ -7,7 +7,7 @@ public class NameCard {
 	String phone;
 	String email;
 		
-	PrintNameInterface pNameInter;
+	PrintNameInterface pNameInter; //인터페이스를 사용함으로써 
 	
 	public NameCard(String name, String phone, String email) {
 		super();
