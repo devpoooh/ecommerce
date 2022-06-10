@@ -1,5 +1,6 @@
 package main;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -11,12 +12,15 @@ import player.Batter;
 import player.pitcher;
 
 public class MainClass {
-	public static void main(String[] args) {
+	
+	
+	public static void main(String[] args) throws Exception {
 		
 		int cho;
 		BaseballDao dao = new BaseballDao(); //crud 관리
 		FileProc file = new FileProc(); //파일 관리
-		
+		List<Human> list = new ArrayList<Human>();
+		list = file.readFile();
 		
 		while(true) {
 			
@@ -51,7 +55,7 @@ public class MainClass {
 						dao.dataPrint();
 						break;
 					case 6://파일에 저장
-						file.saveFile();
+						dao.writeFile();
 						break;
 					case 7://파일 데이터 불러오기
 						file.readFile();
